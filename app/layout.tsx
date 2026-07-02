@@ -10,7 +10,7 @@ import PortfolioBar from '@/components/PortfolioBar'
 export const metadata: Metadata = {
   title: 'Prompt Lab — Generator · Evaluator · RAG Evaluator',
   description: 'Generate production-grade prompts, evaluate quality, and benchmark RAG pipelines. Powered by Claude & GPT.',
-  authors: [{ name: "Atul Sharma", url: "https://atul-sharma-qa.vercel.app" }],
+  authors: [{ name: "Atul Sharma", url: "https://atulsharma.vercel.app" }],
   creator: "Atul Sharma",
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </footer>
           <PasscodeModal />
         </LabProvider>
-      </body>
+      <Suspense fallback={null}><PortfolioBar /></Suspense></body>
     </html>
   )
 }
