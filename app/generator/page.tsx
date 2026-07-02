@@ -33,6 +33,7 @@ const EXAMPLES = [
 ]
 
 export default function GeneratorPage() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { gen, setGen, activeTask, setActiveTask, stopActiveTask, abortRef, providers } = useLab()
   const { form, result, loading, error } = gen
 
